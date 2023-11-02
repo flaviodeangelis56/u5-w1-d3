@@ -64,7 +64,7 @@ public class BeansConfiguration {
 
     @Bean
     Table getTable1() {
-        return new Table(1, 4, true);
+        return new Table(1, 6, true);
     }
 
     @Bean
@@ -90,6 +90,6 @@ public class BeansConfiguration {
         Drink cola = new Drink("Coca Cola", 211, 2.50);
         orderItem.add(acqua);
         orderItem.add(cola);
-        return new Order(1, "in corso", 3, LocalDateTime.now(), orderItem, costoCoperto);
+        return new Order(1, "in corso", 4, LocalDateTime.now(), orderItem, costoCoperto);
     }
 }
